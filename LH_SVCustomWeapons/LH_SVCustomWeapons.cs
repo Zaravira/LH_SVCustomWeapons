@@ -1,5 +1,6 @@
 ﻿using BepInEx;
 using HarmonyLib;
+using UnityEngine;
 
 namespace LH_SVCustomWeapons
 {
@@ -34,10 +35,11 @@ namespace LH_SVCustomWeapons
             if (___selectedMod > 0)
             {
                 WeaponModifier weaponModifier = Crafting.GetWeaponModifier(___selectedMod);
-                if (weaponModifier.id == 1 || weaponModifier.id == 4 || weaponModifier.id == 6 || weaponModifier.id == 9 || weaponModifier.id == 11 || weaponModifier.id == 12 || weaponModifier.id == 13)
+                if (weaponModifier.id == 1 || weaponModifier.id == 4 || weaponModifier.id == 6 || weaponModifier.id == 9 || weaponModifier.id == 11 || weaponModifier.id == 12 || weaponModifier.id == 13 || weaponModifier.id == 15)
                     return true;
                 else
                     weaponModifier.allowedInstances = 255;
+                //Debug.Log(weaponModifier.id + " this is the ID of the last added modifier/booster");
             }
             return true;
         }
