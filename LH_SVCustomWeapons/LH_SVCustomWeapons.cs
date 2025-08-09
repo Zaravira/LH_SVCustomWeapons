@@ -9,7 +9,7 @@ namespace LH_SVCustomWeapons
     {
         public const string pluginGuid = "LH_SVCustomWeapons";
         public const string pluginName = "LH_SVCustomWeapons";
-        public const string pluginVersion = "0.0.1";
+        public const string pluginVersion = "0.0.2";
 
         public void Awake()
         {
